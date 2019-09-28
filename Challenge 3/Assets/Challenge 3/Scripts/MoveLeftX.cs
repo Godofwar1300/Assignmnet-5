@@ -2,6 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * (Christopher Green)
+ * (MoveLeftX.cs)
+ * (Assignment 5)
+ * (This scripts handles the movement of the background and the obstacles.)
+ */
+
+
 public class MoveLeftX : MonoBehaviour
 {
     public float speed;

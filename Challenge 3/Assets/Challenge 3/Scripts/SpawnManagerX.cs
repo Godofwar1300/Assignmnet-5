@@ -2,6 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * (Christopher Green)
+ * (SpawnManager.cs)
+ * (Assignment 5)
+ * (This scripts handles the spawning of the obstacles.)
+ */
+
+
+
 public class SpawnManagerX : MonoBehaviour
 {
     public GameObject[] objectPrefabs;

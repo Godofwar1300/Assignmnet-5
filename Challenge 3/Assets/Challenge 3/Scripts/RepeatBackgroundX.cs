@@ -2,6 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * (Christopher Green)
+ * (RepeatBackgroundX.cs)
+ * (Assignment 5)
+ * (This scripts handles the repeating of the background)
+ */
+
+
 public class RepeatBackgroundX : MonoBehaviour
 {
     private Vector3 startPos;

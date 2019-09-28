@@ -2,6 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * (Christopher Green)
+ * (PlayerController.cs)
+ * (Assignment 5)
+ * (This scripts handles the player and a lot of its conditions and actions)
+ */
+
+
+
 public class PlayerControllerX : MonoBehaviour
 {
     public bool gameOver;
@@ -39,7 +48,7 @@ public class PlayerControllerX : MonoBehaviour
     void Update()
     {
 
-        if(transform.position.y < 12)
+        if (transform.position.y < 12)
         {
             isLowEnough = true;
         }
@@ -65,7 +74,7 @@ public class PlayerControllerX : MonoBehaviour
             gameOver = true;
             Debug.Log("Game Over!");
             Destroy(other.gameObject);
-        } 
+        }
 
         // if player collides with money, fireworks
         else if (other.gameObject.CompareTag("Money"))
@@ -76,7 +85,7 @@ public class PlayerControllerX : MonoBehaviour
 
         }
 
-        if(other.gameObject.CompareTag("Ground") && !gameOver)
+        if (other.gameObject.CompareTag("Ground") && !gameOver)
         {
             playerRb.AddForce(Vector3.up * upForce, ForceMode.Impulse);
             playerAudio.PlayOneShot(bounceSound, 1.0f);
